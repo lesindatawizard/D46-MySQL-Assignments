@@ -122,3 +122,54 @@
 4. **Found** the length of each `Country_name`.
 5. **Extracted** the first three characters of each country name.
 6. **Converted** all country names to `UPPERCASE` and `lowercase`.
+
+## Assignment 8 – Subqueries and Views
+
+### Report on subqueries and view operations
+
+#### Steps Done:
+
+1. **Found** the number of persons in each country.
+2. **Sorted** the number of persons in each country from high to low.
+3. **Calculated** the average rating for persons in each country where the average is greater than 3.0.
+4. **Identified** countries with the same rating as USA using subqueries.
+5. **Selected** countries whose population is greater than the average population of all countries.
+6. **Created** a database named `Product`.
+7. **Created** a table `Customer` with fields: `Customer_Id` (Primary Key), `First_name`, `Last_name`, `Email`, `Phone_no`, `Address`, `City`, `State`, `Zip_code`, `Country`.
+8. **Created** a view `customer_info` showing full name and email address of customers.
+9. **Performed** `SELECT` operation on `customer_info`.
+10. **Created** a view `US_Customers` to display customers from the US.
+11. **Created** a view `Customer_details` with full name, email, phone number, and state.
+12. **Updated** phone numbers of customers in California via `Customer_details`.
+13. **Counted** number of customers in each state and filtered those with more than 5 customers.
+14. **Retrieved** number of customers in each state using `Customer_details` view.
+15. **Displayed** all columns from `Customer_details` sorted by state in ascending order.
+
+---
+
+## Assignment 9 – Stored Procedures
+
+### Report on creating and using stored procedures
+
+#### Steps Done:
+
+1. **Created** a stored procedure to insert new records into `Worker` table using IN parameters for all fields, and **invoked** it.
+2. **Created** a procedure with an IN parameter (`WORKER_ID`) and an OUT parameter (`SALARY`) to return worker’s salary, and **called** it.
+3. **Created** a procedure to update `DEPARTMENT` based on `WORKER_ID`, and **called** it.
+4. **Created** a procedure to return count of workers in a given department using OUT parameter `p_workerCount`, and **called** it.
+5. **Created** a procedure to return average salary of workers in a given department using OUT parameter `p_avgSalary`, and **called** it.
+
+---
+
+## Assignment 10 – Triggers
+
+### Report on creating triggers for table activity tracking
+
+#### Steps Done:
+
+1. **Created** a table `teachers` with fields: `id`, `name`, `subject`, `experience`, `salary` and **inserted** 8 rows.
+2. **Created** a `BEFORE INSERT` trigger named `before_insert_teacher` to raise an error if salary is less than zero.
+3. **Created** an `AFTER INSERT` trigger named `after_insert_teacher` to log insert actions into `teacher_log` table.
+4. **Created** a `BEFORE DELETE` trigger to prevent deletion of rows with experience greater than 10 years.
+5. **Created** an `AFTER DELETE` trigger to insert deleted teacher’s log data into `teacher_log`.
+
